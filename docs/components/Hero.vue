@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Hey, I'm {{ name || "John Doe" }}.</h1>
+        <h1 class="title">Welcome to {{ name || "EraserRain" }}'s blog!</h1>
         <h2 class="subtitle">
           {{ subtitle }}
         </h2>
@@ -10,7 +10,6 @@
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -26,7 +25,6 @@ export default {
   },
 };
 </script>
-
 
 <style>
 h2.subtitle {

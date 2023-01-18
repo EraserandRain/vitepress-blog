@@ -10,7 +10,7 @@
           <p class="excerpt">{{ truncateText(excerpt, 50) }}</p>
           <div class="author">
             <div>
-              <h3 class="name">{{ author }}</h3>
+              <h3 class="name">{{ author || "EraserRain" }}</h3>
               <p class="date">{{ date }}</p>
             </div>
           </div>
