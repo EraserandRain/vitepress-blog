@@ -3,7 +3,7 @@ export LC_ALL=C
 CURRENT_DATE=$(date -d '0 day' '+%Y%m%d')
 
 set -e
-pnpm docs:build
+pnpm build
 cd ./public/
 echo "Personal Blog built with vitepress + github-pages" > README.md
 echo "【[https://eraserandrain.github.io/](https://eraserandrain.github.io/)】" >> README.md

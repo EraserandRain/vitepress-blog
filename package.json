@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "node getArticles.mjs && npx vitepress dev docs",
-    "docs:build": "node getArticles.mjs && npx vitepress build docs",
-    "docs:preview": "npx vitepress preview docs"
+    "dev": "node getArticles.mjs && npx vitepress dev docs",
+    "build": "node getArticles.mjs && npx vitepress build docs",
+    "preview": "npx vitepress preview docs"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "gray-matter": "^4.0.3",
     "remove-markdown": "^0.5.0",
-    "vitepress": "1.0.0-alpha.35",
-    "vue": "^3.2.45"
+    "vitepress": "1.0.0-alpha.60",
+    "vue": "^3.2.47"
   }
 }

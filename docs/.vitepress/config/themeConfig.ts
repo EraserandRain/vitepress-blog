@@ -1,16 +1,16 @@
-const theme = {
+const themeConfig = {
     lastUpdatedText: 'Last Updated',
-    logo: './img/toad.jpg',
+    logo: "https://raw.githubusercontent.com/EraserandRain/ImageHosting/main/toad.jpg",
     siteTitle: "EraserRain's Blog",
     nav: [
         { text: "Home", link: "/" },
         {
             text: "Blog",
             items: [
-                {text: 'Frontend', link: '/frontend'},
-                {text: 'Backend', link: '/backend'},
-                {text: 'Ops', link: '/ops'},
-                {text: 'Others', link: '/others'},
+                { text: 'Frontend', link: '/frontend' },
+                { text: 'Backend', link: '/backend' },
+                { text: 'Ops', link: '/ops' },
+                { text: 'Others', link: '/others' },
             ]
         }
     ],
@@ -22,4 +22,4 @@ const theme = {
         next: '➡'
     }
 }
-export default theme
+export default themeConfig
