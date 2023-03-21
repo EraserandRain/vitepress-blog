@@ -7,10 +7,10 @@ const themeConfig = {
         {
             text: "Blog",
             items: [
-                { text: 'Frontend', link: '/frontend' },
-                { text: 'Backend', link: '/backend' },
-                { text: 'Ops', link: '/ops' },
-                { text: 'Others', link: '/others' },
+                { text: 'Frontend', link: '/Frontend' },
+                { text: 'Backend', link: '/Backend' },
+                { text: 'Ops', link: '/DevOps' },
+                { text: 'Others', link: '/Others' },
             ]
         }
     ],

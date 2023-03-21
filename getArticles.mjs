@@ -9,11 +9,11 @@ async function generateDataJson(directories) {
   const data = [];
 
   for (const directory of directories) {
-    const articles = await fs.readdir(`./docs/${directory}`);
+    const articles = await fs.readdir(`./docs/src/${directory}`);
 
     const directoryData = await Promise.all(
       articles.map(async (article) => {
-        const file = matter.read(`./docs/${directory}/${article}`, {
+        const file = matter.read(`./docs/src/${directory}/${article}`, {
           excerpt: true,
           excerpt_separator: '<!-- more -->',
         });
@@ -25,8 +25,11 @@ async function generateDataJson(directories) {
 
         return {
           ...data,
-          title: contents[0].replace(/\s{2,}/g, '').trim(),
-          path: path.replace('./docs/', '').replace(/\.md$/, '.html'),
+          title: data?.title || contents[0].replace(/\s{2,}/g, '').trim(),
+          date: new Date(data.date).toISOString().split('T')[0],
+          path: path.replace('./docs/src/', '').replace(/\.md$/, '.html'),
+          category: data?.category || directory,
+          tags: data?.tags,
           excerpt: contents
             .slice(1)
             .join('')
